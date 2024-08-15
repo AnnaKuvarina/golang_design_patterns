@@ -1,0 +1,3 @@
+## The confinement pattern 
+1. In Go (Golang) is a concurrency pattern used to safely share data between goroutines without using mutexes or other synchronization primitives. The idea is to confine the ownership of the data to a single goroutine, which is the only one allowed to mutate it. Other goroutines can only interact with this data by sending messages to the owning goroutine via channels.
+2. Confined is the mechanism insuring the information is only available from 1 concurrent goroutine
